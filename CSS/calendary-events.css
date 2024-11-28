@@ -1,0 +1,133 @@
+/* General Styles */
+.calendary-content {
+    margin: 20px 0;
+    padding: 0;
+    font-family:'outfit';
+    background-color: #4A1E1E;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px; /* Aumentado tamaño de fuente */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Carousel Styles */
+.carousel-calendary {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.carousel-wrapper {
+    position: relative; /* Asegura que las flechas estén fuera pero con posición relativa */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Esto sigue asegurando que el contenido del carrusel no se desborde */
+}
+
+.events-wrapper {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    font-weight: bold;
+}
+
+.event-block {
+    flex: 0 0 400px; /* Asegura que cada bloque tenga un tamaño fijo */
+    padding: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.event-block .month {
+    font-size: 40px; /* Aumentado tamaño de fuente */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.event-block .day {
+    font-size: 72px; /* Aumentado tamaño de fuente */
+    font-weight: bold;
+    margin: 0;
+}
+
+.event-block .event-title {
+    font-size: 18px; /* Aumentado tamaño de fuente */
+    margin-top: 10px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+/* Block Colors */
+.green {
+    background-color: #D8F013 ;
+}
+
+.blue {
+    background-color: #FF2511;
+}
+
+.red {
+    background-color: #FF7930;
+}
+
+.yellow {
+    background-color: #0E86D4;
+    color: #000;
+}
+
+/* Flechas fuera del carrusel */
+.arrow {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.arrow-left {
+    left: -5px; /* Flecha izquierda afuera */
+    padding: 0 10px; /* Hace el área clickeable más grande */
+    
+}
+
+.arrow-right {
+    right: -5px; /* Flecha derecha afuera */
+    padding: 0 10px; /* Hace el área clickeable más grande */
+}
+
+/* Show All Events Button */
+.show-all {
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(138, 138, 138);
+    color: #4A1E1E;
+    font-size: 16px; /* Aumentado tamaño de fuente */
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.show-all:hover {
+    background-color: #FFD700;
+    color: white;
+}

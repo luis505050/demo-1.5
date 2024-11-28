@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Calendario</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/events.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título -->
+        <h1 class="page-title">Events</h1>
+        
+        <!-- Navegación del mes -->
+        <div class="month-navigation">
+            <button class="nav-btn" id="prevMonth">&lt;</button>
+            <span class="current-month" id="currentMonth">MARZO 2024</span>
+            <button class="nav-btn" id="nextMonth">&gt;</button>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Lista de eventos -->
+            <div class="events-list" id="eventsList">
+                <!-- Los eventos se generarán dinámicamente con JavaScript -->
+            </div>
+
+            <!-- Sección del calendario -->
+            <div class="calendar-section">
+                <table class="calendar" id="calendarTable">
+                    <!-- Calendario generado dinámicamente -->
+                </table>
+                <div class="calendar-filters">
+                    <h2>Calendars</h2>
+                    <label>
+                        <input type="checkbox" checked>     
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="events.js"></script>
+</body>
+</html>
